@@ -30,3 +30,8 @@ E:\Coding\.NET\CityInfo\CityInfo.API\obj\Debug\net8.0\refint\CityInfo.API.dll
 E:\Coding\.NET\CityInfo\CityInfo.API\obj\Debug\net8.0\CityInfo.API.pdb
 E:\Coding\.NET\CityInfo\CityInfo.API\obj\Debug\net8.0\CityInfo.API.genruntimeconfig.cache
 E:\Coding\.NET\CityInfo\CityInfo.API\obj\Debug\net8.0\ref\CityInfo.API.dll
+E:\Coding\.NET\CityInfo\CityInfo.API\obj\Debug\net8.0\CityInfo.API.sourcelink.json
+E:\Coding\.NET\CityInfo\CityInfo.API\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+E:\Coding\.NET\CityInfo\CityInfo.API\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+E:\Coding\.NET\CityInfo\CityInfo.API\bin\Debug\net8.0\Newtonsoft.Json.dll
+E:\Coding\.NET\CityInfo\CityInfo.API\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll

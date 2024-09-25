@@ -8,7 +8,8 @@ builder.Services.AddControllers(options =>
 {
     //I added option to refuse any unsupported format (in content negotiation stage)
     options.ReturnHttpNotAcceptable = true;
-}).AddXmlDataContractSerializerFormatters(); //but here I enabled XML support
+}).AddNewtonsoftJson() //Helps in using PATCH action
+  .AddXmlDataContractSerializerFormatters(); //but here I enabled XML support
 
 /*I've commented these lines because it won't help us now, but I'll leave it to know how to manipulate the error 
 responses*/
