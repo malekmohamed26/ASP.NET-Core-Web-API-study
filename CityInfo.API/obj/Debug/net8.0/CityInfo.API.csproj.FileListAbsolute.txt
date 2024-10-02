@@ -35,3 +35,13 @@ E:\Coding\.NET\CityInfo\CityInfo.API\bin\Debug\net8.0\Microsoft.AspNetCore.JsonP
 E:\Coding\.NET\CityInfo\CityInfo.API\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 E:\Coding\.NET\CityInfo\CityInfo.API\bin\Debug\net8.0\Newtonsoft.Json.dll
 E:\Coding\.NET\CityInfo\CityInfo.API\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+E:\Coding\.NET\CityInfo\CityInfo.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+E:\Coding\.NET\CityInfo\CityInfo.API\bin\Debug\net8.0\Serilog.dll
+E:\Coding\.NET\CityInfo\CityInfo.API\bin\Debug\net8.0\Serilog.AspNetCore.dll
+E:\Coding\.NET\CityInfo\CityInfo.API\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+E:\Coding\.NET\CityInfo\CityInfo.API\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+E:\Coding\.NET\CityInfo\CityInfo.API\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+E:\Coding\.NET\CityInfo\CityInfo.API\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+E:\Coding\.NET\CityInfo\CityInfo.API\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+E:\Coding\.NET\CityInfo\CityInfo.API\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+E:\Coding\.NET\CityInfo\CityInfo.API\bin\Debug\net8.0\Serilog.Sinks.File.dll

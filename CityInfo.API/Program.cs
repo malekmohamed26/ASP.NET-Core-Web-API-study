@@ -1,6 +1,19 @@
+using CityInfo.API.Services;
 using Microsoft.AspNetCore.StaticFiles;
+using Serilog;
 
-var builder = WebApplication.CreateBuilder(args);
+//We'll use Serilog to configure creating file logs instead of console logs, lines from 5 to 9 configures it
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Debug()
+    .WriteTo.Console()
+    .WriteTo.File("logs/cityinfo.txt", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
+
+var builder = WebApplication.CreateBuilder(args); //CreateBuilder(args) sets the logging info automatically
+//builder.Logging.ClearProviders(); //Clears all logging information
+//builder.Logging.AddConsole (); //Shows all logging informaion
+
+builder.Host.UseSerilog(); //No need for lines 12-13 since we'll create log files instead of console logs
 
 // Add services to the container.
 
@@ -25,14 +38,27 @@ responses*/
 //    };
 //});
 
+//But instead I'll use this line to configure how potential exceptions should be handled "for those who are building APIs "
+//(i.e. I want to show a nice user-friendly interface for those who are working with APIs)
+builder.Services.AddProblemDetails();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<FileExtensionContentTypeProvider>();
 
+builder.Services.AddTransient<LocalMailService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+//1. Configure Exception handler  to show any exception on running time before sending any requests
+if (!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler();
+}
+
+//2. Configure HTTP request for normal use
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
