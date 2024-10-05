@@ -41,7 +41,7 @@ namespace CityInfo.API
                           new PointOfInterestDto() {
                              Id = 4,
                              Name = "Antwerp Central Station",
-                             Description = "The the finest example of railway architecture in Belgium." },
+                             Description = "The finest example of railway architecture in Belgium." },
                      }
                 },
                 new CityDto()
