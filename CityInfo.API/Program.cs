@@ -63,6 +63,9 @@ builder.Services.AddDbContext<CityInfoContext>(dbContextOptions
 //to register the repository
 builder.Services.AddScoped<ICityInfoRepository, CityInfoRepository>();
 
+//AutoMapper is helpful when working on large number of mappings (look at GetCities()'s inside mappings in CitiesController.cs)
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

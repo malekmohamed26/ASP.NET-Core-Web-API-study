@@ -140,3 +140,5 @@ E:\Coding\.NET\CityInfo\CityInfo.API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.
 E:\Coding\.NET\CityInfo\CityInfo.API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 E:\Coding\.NET\CityInfo\CityInfo.API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 E:\Coding\.NET\CityInfo\CityInfo.API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Coding\.NET\CityInfo\CityInfo.API\bin\Debug\net8.0\AutoMapper.dll
+E:\Coding\.NET\CityInfo\CityInfo.API\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
