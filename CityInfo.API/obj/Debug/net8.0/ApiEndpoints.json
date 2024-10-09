@@ -203,7 +203,7 @@
         "IsRequired": true
       },
       {
-        "Name": "includePointOfInterest",
+        "Name": "includePointsOfInterest",
         "Type": "System.Boolean",
         "IsRequired": false
       }

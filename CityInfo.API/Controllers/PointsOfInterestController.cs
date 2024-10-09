@@ -72,6 +72,7 @@ namespace CityInfo.API.Controllers
             return Ok(_mapper.Map<PointOfInterestDto>(pointOfInterest));
         }
 
+        //To create new point of interest
         [HttpPost]
         public async Task<ActionResult<PointOfInterestDto>> CreatePointOfInterest(
                int cityId,
@@ -101,6 +102,7 @@ namespace CityInfo.API.Controllers
                  createdPointOfInterestToReturn);
         }
 
+        //To update an existing point of interest
         [HttpPut("{pointofinterestid}")]
         public async Task<ActionResult> UpdatePointOfInterest(int cityId, int pointOfInterestId,
             PointOfInterestForUpdateDto pointOfInterest)
@@ -127,7 +129,7 @@ namespace CityInfo.API.Controllers
             return NoContent();
         }
 
-
+        //To patch an existing point of interest
         [HttpPatch("{pointofinterestid}")]
         public async Task<ActionResult> PartiallyUpdatePointOfInterest(
             int cityId, int pointOfInterestId,
@@ -169,6 +171,7 @@ namespace CityInfo.API.Controllers
             return NoContent();
         }
 
+        //To delete an existing point of interest
         [HttpDelete("{pointOfInterestId}")]
         public async Task<ActionResult> DeletePointOfInterest(
             int cityId, int pointOfInterestId)

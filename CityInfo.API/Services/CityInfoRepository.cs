@@ -8,7 +8,8 @@ namespace CityInfo.API.Services
     {
         private readonly CityInfoContext _context;
 
-        public CityInfoRepository(CityInfoContext context) {
+        public CityInfoRepository(CityInfoContext context)
+        {
             _context = context ?? throw new ArgumentNullException(nameof(context));
         }
 
@@ -19,13 +20,15 @@ namespace CityInfo.API.Services
 
         public async Task<City?> GetCityAsync(int cityId, bool includePointsOfInterest)
         {
-            if(includePointsOfInterest)
+            if (includePointsOfInterest)
             {
                 //If the city includes points of interest, it will return the city and all its points of interest (asynchronously)
-                return await _context.Cities.Include(c => c.PointsOfInterest).Where(c => c.Id == cityId).FirstOrDefaultAsync();
+                return await _context.Cities.Include(c => c.PointsOfInterest)
+                    .Where(c => c.Id == cityId).FirstOrDefaultAsync();
             }
             //If not, it will return the city only (asynchronously)
-            return await _context.Cities.Where(c => c.Id == cityId).FirstOrDefaultAsync();
+            return await _context.Cities
+                  .Where(c => c.Id == cityId).FirstOrDefaultAsync();
         }
 
         public async Task<bool> CityExistsAsync(int cityId)
@@ -34,7 +37,7 @@ namespace CityInfo.API.Services
         }
 
         public async Task<PointOfInterest?> GetPointOfInterestForCityAsync(
-            int cityId,
+            int cityId, 
             int pointOfInterestId)
         {
             return await _context.PointsOfInterest
@@ -42,10 +45,12 @@ namespace CityInfo.API.Services
                .FirstOrDefaultAsync();
         }
 
-        public async Task<IEnumerable<PointOfInterest>> GetPointsOfInterestForCityAsync(int cityId)
+        public async Task<IEnumerable<PointOfInterest>> GetPointsOfInterestForCityAsync(
+            int cityId)
         {
             //to return all points of interests for a city that matches the city id (asynchronously)
-            return await _context.PointsOfInterest.Where(p => p.Id == cityId).ToListAsync();
+            return await _context.PointsOfInterest
+                .Where(p => p.CityId == cityId).ToListAsync();
         }
 
         public async Task AddPointOfInterestForCityAsync(int cityId, PointOfInterest pointOfInterest)
