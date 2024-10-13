@@ -15,7 +15,41 @@ namespace CityInfo.API.Services
 
         public async Task<IEnumerable<City>> GetCitiesAsync()
         {
-            return await _context.Cities.OrderBy(c => c.Name).ToListAsync(); //will return all cities asynchronously, ordered by their name
+            return await _context
+                .Cities
+                .OrderBy(c => c.Name)
+                .ToListAsync(); //will return all cities asynchronously, ordered by their name
+        }
+        
+        public async Task<(IEnumerable<City>, PaginationMetadata)> GetCitiesAsync(
+            string? name, string? searchQuery, int pageNumber, int pageSize)
+        {
+            //Collection to start from
+            var collection = _context.Cities as IQueryable<City>;
+
+            if (!string.IsNullOrWhiteSpace(name))
+            {
+                name = name.Trim();
+                collection = collection.Where(c => c.Name == name);
+            }
+
+            if (!string.IsNullOrWhiteSpace(searchQuery)) { 
+                searchQuery = searchQuery.Trim();
+                collection = collection.Where(a => a.Name.Contains(searchQuery) 
+                || (a.Description != null && a.Description.Contains(searchQuery)));
+            }
+
+            var totalItemCount = await collection.CountAsync();
+
+            var paginationMetadata = new PaginationMetadata(
+                totalItemCount, pageSize, pageNumber);
+
+            var collectionToReturn =  await collection.OrderBy(c => c.Name)
+                .Skip(pageSize * (pageNumber - 1)) //If we want to proceed to page 2, we have to skip page 1, and so on
+                .Take(pageSize) //then we'll take the current requested page size
+                .ToListAsync(); //will return all cities asynchronously, ordered by their name
+
+            return (collectionToReturn, paginationMetadata);
         }
 
         public async Task<City?> GetCityAsync(int cityId, bool includePointsOfInterest)

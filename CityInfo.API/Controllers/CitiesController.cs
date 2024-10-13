@@ -2,6 +2,7 @@
 using CityInfo.API.Models;
 using CityInfo.API.Services;
 using Microsoft.AspNetCore.Mvc;
+using System.Text.Json;
 
 namespace CityInfo.API.Controllers
 {
@@ -12,6 +13,7 @@ namespace CityInfo.API.Controllers
         //private readonly CitiesDataStore _citiesDataStore;
         private readonly ICityInfoRepository _cityInfoRepository;
         private readonly IMapper _mapper;
+        const int maxCitiesPageSize = 20;
 
         //public CitiesController(CitiesDataStore citiesDataStore)
         //{
@@ -26,10 +28,19 @@ namespace CityInfo.API.Controllers
         }
          
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<CityWithoutPointsOfInterestDto>>> GetCities()
+        public async Task<ActionResult<IEnumerable<CityWithoutPointsOfInterestDto>>> GetCities(
+            string? name, string? searchQuery, int pageNumber = 1, int pageSize = 10)
         {
-            var cityEntities = await _cityInfoRepository.GetCitiesAsync();
+            if (pageSize > maxCitiesPageSize)
+            {
+                pageSize = maxCitiesPageSize;
+            }
+            var (cityEntities, paginationMetadata) = await _cityInfoRepository
+                .GetCitiesAsync(name, searchQuery, pageNumber, pageSize);
 
+            Response.Headers.Add("X+Pagination",
+                JsonSerializer.Serialize(paginationMetadata));
+            return Ok(_mapper.Map<IEnumerable<CityWithoutPointsOfInterestDto>>(cityEntities));
             //Instead of manually mapping the City Entities to a list of cities without Dtos
             //, we'll use AutoMapper to automatically map City Entities
 
@@ -48,7 +59,7 @@ namespace CityInfo.API.Controllers
             //We'll ise Map<>() to map each element from source list to destination list,
             //and the destination list is the list what we return
             // and the map is created in CityProfile.cs
-            return Ok(_mapper.Map<IEnumerable<CityWithoutPointsOfInterestDto>>(cityEntities)); 
+
         }
 
         //Old one
