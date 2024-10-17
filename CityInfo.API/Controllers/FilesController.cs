@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Asp.Versioning;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.StaticFiles;
 
 namespace CityInfo.API.Controllers
@@ -19,11 +20,12 @@ namespace CityInfo.API.Controllers
 
 
         [HttpGet("{fileId}")]
+        [ApiVersion(0.1, Deprecated = true)]
         public ActionResult GetFile(string fileId)
         {
             // look up the actual file, depending on the fileId...
             // demo code
-            var pathToFile = "getting-started-with-rest-slides.pdf";
+            var pathToFile = "securing-your-api-slides.pdf";
 
             // check whether the file exists
             if (!System.IO.File.Exists(pathToFile))

@@ -1,5 +1,33 @@
 [
   {
+    "ContainingType": "CityInfo.API.Controllers.AuthenticationController",
+    "Method": "Authenticate",
+    "RelativePath": "api/authentication/authenticate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "authenticationRequestBody",
+        "Type": "CityInfo.API.Controllers.AuthenticationController\u002BAuthenticationRequestBody",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json",
+          "application/xml",
+          "text/xml"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "CityInfo.API.Controllers.CitiesController",
     "Method": "GetCities",
     "RelativePath": "api/cities",
