@@ -154,3 +154,5 @@ E:\Coding\.NET\CityInfo\CityInfo.API\bin\Debug\net8.0\Microsoft.IdentityModel.Pr
 E:\Coding\.NET\CityInfo\CityInfo.API\bin\Debug\net8.0\Asp.Versioning.Abstractions.dll
 E:\Coding\.NET\CityInfo\CityInfo.API\bin\Debug\net8.0\Asp.Versioning.Http.dll
 E:\Coding\.NET\CityInfo\CityInfo.API\bin\Debug\net8.0\Asp.Versioning.Mvc.dll
+E:\Coding\.NET\CityInfo\CityInfo.API\bin\Debug\net8.0\CityInfo.API.xml
+E:\Coding\.NET\CityInfo\CityInfo.API\bin\Debug\net8.0\Asp.Versioning.Mvc.ApiExplorer.dll
