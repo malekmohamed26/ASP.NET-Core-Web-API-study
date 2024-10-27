@@ -80,14 +80,14 @@ namespace CityInfo.API.Controllers
         /// <param name="includePointsOfInterest">Whether or not include points of interest</param>
         /// <returns>A city with or without points of interest</returns>
         /// <response code="200">Returns the requested city</response>
-        [HttpGet("{id}")]
+        [HttpGet("{cityId}")]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<IActionResult> GetCity(
-            int id, bool includePointsOfInterest = false)
+            int cityId, bool includePointsOfInterest = false)
         {
-            var city = await _cityInfoRepository.GetCityAsync(id, includePointsOfInterest);
+            var city = await _cityInfoRepository.GetCityAsync(cityId, includePointsOfInterest);
             if (city == null)
             {
                 return NotFound();

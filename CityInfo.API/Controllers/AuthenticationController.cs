@@ -98,8 +98,8 @@ namespace CityInfo.API.Controllers
             return new CityInfoUser(
                 1,
                 userName ?? "",
-                "Malek",
-                "Mohamed",
+                "Kevin",
+                "Dockx",
                 "Antwerp");
         }
     }

@@ -1,0 +1,115 @@
+2024-10-24 21:06:45.843 +03:00 [DBG] Registered model binder providers, in the following order: ["Asp.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-10-24 21:06:46.313 +03:00 [DBG] Hosting starting
+2024-10-24 21:06:46.711 +03:00 [INF] User profile is available. Using 'C:\Users\malek\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-24 21:06:46.748 +03:00 [DBG] Reading data from file 'C:\Users\malek\AppData\Local\ASP.NET\DataProtection-Keys\key-573d0b7a-d151-4033-9d63-538e85749fc6.xml'.
+2024-10-24 21:06:46.923 +03:00 [DBG] Found key {573d0b7a-d151-4033-9d63-538e85749fc6}.
+2024-10-24 21:06:47.757 +03:00 [DBG] Considering key {573d0b7a-d151-4033-9d63-538e85749fc6} with expiration date 2025-01-12 18:31:59Z as default key.
+2024-10-24 21:06:47.888 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-10-24 21:06:47.907 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2024-10-24 21:06:47.927 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-10-24 21:06:47.959 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-10-24 21:06:47.978 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-10-24 21:06:47.991 +03:00 [DBG] Using key {573d0b7a-d151-4033-9d63-538e85749fc6} as the default key.
+2024-10-24 21:06:48.021 +03:00 [DBG] Key ring with default key {573d0b7a-d151-4033-9d63-538e85749fc6} was loaded during application startup.
+2024-10-24 21:06:49.678 +03:00 [INF] Now listening on: https://localhost:7206
+2024-10-24 21:06:49.683 +03:00 [INF] Now listening on: http://localhost:5020
+2024-10-24 21:06:49.687 +03:00 [DBG] Loaded hosting startup assembly CityInfo.API
+2024-10-24 21:06:49.689 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2024-10-24 21:06:49.703 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-10-24 21:06:49.719 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-10-24 21:06:50.042 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-24 21:06:50.082 +03:00 [INF] Hosting environment: Development
+2024-10-24 21:06:50.085 +03:00 [INF] Content root path: E:\Coding\.NET\CityInfo\CityInfo.API
+2024-10-24 21:06:50.090 +03:00 [DBG] Hosting started
+2024-10-24 21:07:25.867 +03:00 [DBG] Connection id "0HN7KAQRK36RR" accepted.
+2024-10-24 21:07:25.873 +03:00 [DBG] Connection id "0HN7KAQRK36RR" started.
+2024-10-24 21:07:26.094 +03:00 [DBG] Connection 0HN7KAQRK36RR established using the following protocol: "Tls12"
+2024-10-24 21:07:26.309 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/swagger/index.html - null null
+2024-10-24 21:07:27.008 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-10-24 21:07:27.512 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-10-24 21:07:27.518 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-10-24 21:07:27.537 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2024-10-24 21:07:27.544 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-10-24 21:07:27.571 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/swagger/index.html - 200 null text/html;charset=utf-8 1282.4172ms
+2024-10-24 21:07:27.720 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/swagger/index.js - null null
+2024-10-24 21:07:27.881 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/swagger/swagger-ui.css - null null
+2024-10-24 21:07:27.724 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/swagger/index.css - null null
+2024-10-24 21:07:27.718 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-24 21:07:27.906 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/swagger/index.js - 200 null application/javascript;charset=utf-8 186.2577ms
+2024-10-24 21:07:27.913 +03:00 [INF] The file /swagger-ui.css was not modified
+2024-10-24 21:07:27.920 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/swagger/swagger-ui-bundle.js - null null
+2024-10-24 21:07:27.913 +03:00 [INF] The file /index.css was not modified
+2024-10-24 21:07:27.970 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/swagger/swagger-ui-standalone-preset.js - null null
+2024-10-24 21:07:27.981 +03:00 [INF] The file /swagger-ui-bundle.js was not modified
+2024-10-24 21:07:27.991 +03:00 [DBG] Handled. Status code: 304 File: /index.css
+2024-10-24 21:07:27.991 +03:00 [DBG] Handled. Status code: 304 File: /swagger-ui.css
+2024-10-24 21:07:28.069 +03:00 [DBG] Handled. Status code: 304 File: /swagger-ui-bundle.js
+2024-10-24 21:07:28.077 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/swagger/index.css - 304 null text/css 353.5947ms
+2024-10-24 21:07:28.078 +03:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2024-10-24 21:07:28.084 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/swagger/swagger-ui.css - 304 null text/css 203.1605ms
+2024-10-24 21:07:28.098 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/swagger/swagger-ui-bundle.js - 304 null text/javascript 176.313ms
+2024-10-24 21:07:28.167 +03:00 [DBG] Handled. Status code: 304 File: /swagger-ui-standalone-preset.js
+2024-10-24 21:07:28.180 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/_vs/browserLink - null null
+2024-10-24 21:07:28.190 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 471.7298ms
+2024-10-24 21:07:28.252 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/swagger/swagger-ui-standalone-preset.js - 304 null text/javascript 282.2884ms
+2024-10-24 21:07:28.590 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/_vs/browserLink - 200 null text/javascript; charset=UTF-8 409.4246ms
+2024-10-24 21:07:29.831 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/swagger/0.1/swagger.json - null null
+2024-10-24 21:07:30.396 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/swagger/0.1/swagger.json - 200 null application/json;charset=utf-8 565.4957ms
+2024-10-24 21:08:02.973 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/swagger/2.0/swagger.json - null null
+2024-10-24 21:08:03.298 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/swagger/2.0/swagger.json - 200 null application/json;charset=utf-8 324.8231ms
+2024-10-24 21:08:05.557 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/swagger/2.0/swagger.json - null null
+2024-10-24 21:08:05.706 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/swagger/2.0/swagger.json - 200 null application/json;charset=utf-8 118.1109ms
+2024-10-24 21:08:07.132 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/favicon.ico - null null
+2024-10-24 21:08:07.156 +03:00 [DBG] The request path  does not match the path filter
+2024-10-24 21:08:07.332 +03:00 [DBG] No candidates found for the request path '/favicon.ico'
+2024-10-24 21:08:07.336 +03:00 [DBG] Request did not match any endpoints
+2024-10-24 21:08:10.105 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-10-24 21:08:10.115 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/favicon.ico - 404 0 null 2983.4551ms
+2024-10-24 21:08:10.126 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7206/favicon.ico, Response status code: 404
+2024-10-24 21:08:13.113 +03:00 [DBG] Connection id "0HN7KAQRK36RS" accepted.
+2024-10-24 21:08:13.126 +03:00 [DBG] Connection id "0HN7KAQRK36RS" started.
+2024-10-24 21:08:13.186 +03:00 [DBG] Connection 0HN7KAQRK36RS established using the following protocol: "Tls12"
+2024-10-24 21:08:13.341 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7206/swagger/2.0/swagger.json - null null
+2024-10-24 21:08:13.377 +03:00 [DBG] Connection id "0HN7KAQRK36RS" completed keep alive response.
+2024-10-24 21:08:13.380 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7206/swagger/2.0/swagger.json - 200 null application/json;charset=utf-8 39.5269ms
+2024-10-24 21:09:28.111 +03:00 [DBG] Connection id "0HN7KAQRK36RS" received FIN.
+2024-10-24 21:09:28.132 +03:00 [DBG] Connection id "0HN7KAQRK36RS" disconnecting.
+2024-10-24 21:09:28.139 +03:00 [DBG] Connection id "0HN7KAQRK36RS" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-24 21:09:28.161 +03:00 [DBG] Connection id "0HN7KAQRK36RS" stopped.
+2024-10-24 21:26:01.480 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/swagger/index.html?urls.primaryName=2.0 - null null
+2024-10-24 21:26:01.517 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-10-24 21:26:01.560 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-10-24 21:26:01.568 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2024-10-24 21:26:01.571 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-10-24 21:26:01.581 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/swagger/index.html?urls.primaryName=2.0 - 200 null text/html;charset=utf-8 101.8853ms
+2024-10-24 21:26:01.844 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-24 21:26:01.861 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 17.7303ms
+2024-10-24 21:26:03.414 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/swagger/2.0/swagger.json - null null
+2024-10-24 21:26:03.467 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/swagger/2.0/swagger.json - 200 null application/json;charset=utf-8 53.7972ms
+2024-10-24 21:28:01.625 +03:00 [DBG] Connection id "0HN7KAQRK36RT" accepted.
+2024-10-24 21:28:01.636 +03:00 [DBG] Connection id "0HN7KAQRK36RT" started.
+2024-10-24 21:28:01.644 +03:00 [DBG] Connection 0HN7KAQRK36RT established using the following protocol: "Tls12"
+2024-10-24 21:28:01.651 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7206/swagger/2.0/swagger.json - null null
+2024-10-24 21:28:01.684 +03:00 [DBG] Connection id "0HN7KAQRK36RT" completed keep alive response.
+2024-10-24 21:28:01.687 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7206/swagger/2.0/swagger.json - 200 null application/json;charset=utf-8 36.7255ms
+2024-10-24 21:28:01.752 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7206/api/v2/cities - null null
+2024-10-24 21:28:01.759 +03:00 [DBG] The request path  does not match the path filter
+2024-10-24 21:28:01.774 +03:00 [DBG] 1 candidate(s) found for the request path '/api/v2/cities'
+2024-10-24 21:28:01.784 +03:00 [DBG] Endpoint 'CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API)' with route pattern 'api/v{version:apiVersion}/cities' is valid for the request path '/api/v2/cities'
+2024-10-24 21:28:01.797 +03:00 [DBG] Request matched endpoint 'CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API)'
+2024-10-24 21:28:01.809 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-10-24 21:28:01.828 +03:00 [DBG] Policy authentication schemes  did not succeed
+2024-10-24 21:28:01.836 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-10-24 21:28:01.847 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-10-24 21:28:01.850 +03:00 [DBG] Connection id "0HN7KAQRK36RT" completed keep alive response.
+2024-10-24 21:28:01.854 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7206/api/v2/cities - 401 0 null 101.3821ms
+2024-10-24 21:29:16.646 +03:00 [DBG] Connection id "0HN7KAQRK36RT" received FIN.
+2024-10-24 21:29:16.659 +03:00 [DBG] Connection id "0HN7KAQRK36RT" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-24 21:29:16.663 +03:00 [DBG] Connection id "0HN7KAQRK36RT" disconnecting.
+2024-10-24 21:29:16.675 +03:00 [DBG] Connection id "0HN7KAQRK36RT" stopped.
+2024-10-24 22:14:53.331 +03:00 [DBG] Connection id "0HN7KAQRK36RR" received FIN.
+2024-10-24 22:14:53.354 +03:00 [DBG] The connection queue processing loop for 0HN7KAQRK36RR completed.
+2024-10-24 22:14:53.369 +03:00 [DBG] Connection id "0HN7KAQRK36RR" is closed. The last processed stream ID was 29.
+2024-10-24 22:14:53.375 +03:00 [DBG] Connection id "0HN7KAQRK36RR" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-10-24 22:14:53.396 +03:00 [DBG] Connection id "0HN7KAQRK36RR" stopped.
